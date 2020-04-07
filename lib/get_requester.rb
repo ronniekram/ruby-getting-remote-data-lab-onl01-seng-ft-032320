@@ -6,7 +6,7 @@ class GetRequester
   attr_accessor :url
   
   def initialize(url)
-    @url = {} 
+    @url = url 
   end 
   
   def get_response_body
@@ -20,7 +20,6 @@ class GetRequester
   
     programs.collect do |program|
       program["agency"]
-      url << program
     end
   end 
   
