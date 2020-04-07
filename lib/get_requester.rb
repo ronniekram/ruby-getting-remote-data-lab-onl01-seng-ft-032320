@@ -6,7 +6,7 @@ class GetRequester
   attr_accessor :url
   
   def initialize(url)
-    @url = url 
+    @url = {} 
   end 
   
   def get_response_body
@@ -19,7 +19,8 @@ class GetRequester
     programs = JSON.parse(self.get_response_body)
   
     programs.collect do |program|
-      program["agency"]  
+      program["agency"]
+      url << self
     end
   end 
   
