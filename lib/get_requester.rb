@@ -20,7 +20,7 @@ class GetRequester
   
     programs.collect do |program|
       program["agency"]
-      url << self
+      url << program
     end
   end 
   
