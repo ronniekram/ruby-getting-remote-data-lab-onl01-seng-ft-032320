@@ -23,6 +23,7 @@ class GetRequester
       program["agency"]
       parsed << program
     end
+    parsed
   end 
   
 end 
