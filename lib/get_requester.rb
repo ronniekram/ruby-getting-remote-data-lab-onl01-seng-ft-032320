@@ -3,10 +3,10 @@ require 'open-uri'
 require 'json'
 
 class GetRequester
-  attr_accessor :URL
+  attr_accessor :url
   
-  def initialize(URL)
-    @URL = URL
+  def initialize(url)
+    @url = url 
   end 
   
   def get_response_body
