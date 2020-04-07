@@ -21,6 +21,7 @@ class GetRequester
   
     programs.collect do |program|
       program["agency"]
+      parsed << program
     end
   end 
   
